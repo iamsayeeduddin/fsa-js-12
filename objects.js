@@ -12,8 +12,26 @@ var contact1 = {
   profilePic1: "https://......",
   email: ["rafay@work.com", "arafay@gmail.com"],
   call: function () {
-    console.log("Calling Abdul Rafay!");
+    console.log("Calling Abdul Rafay");
   },
 };
 
-console.log("Welcome " + contact1["full name"]);
+// console.log("Welcome " + contact1["full name"]);
+
+// contact1.call();
+
+// var a = 10;
+// var b = a;
+
+// var contact2 = contact1;
+// console.log(JSON.parse(JSON.stringify(contact1)));
+
+// var contact2 = JSON.parse(JSON.stringify(contact1));
+// contact2["full name"] = "Sayeeduddin";
+var contact2 = {};
+for (var key in contact1) {
+  // console.log(contact1[key]);
+  contact2[key] = contact1[key];
+}
+
+console.log(contact1, contact2);
