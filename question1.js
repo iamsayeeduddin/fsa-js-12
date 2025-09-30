@@ -1,3 +1,6 @@
+const { obj, books } = require("./es63");
+// const es63 = require("./es63");
+
 // Calculate the Bill of Your Electricity Consumed
 // 160 Units
 
@@ -35,3 +38,5 @@ function calculateBill(units) {
 const amountToPay = calculateBill(-2355);
 
 console.log(amountToPay);
+// console.log(es63.obj, es63.books);
+console.log(obj, books);
